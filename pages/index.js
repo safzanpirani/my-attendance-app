@@ -78,7 +78,7 @@ export default function Home() {
                 <button className="mt-2 ml-2 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="submit">Calculate</button>
                 </form>
             {result && (
-                <div className="block mb-2 text-sm font-large text-black text-2xl dark:text-black">
+                <div className="block mb-2 font-large text-black text-2xl dark:text-black">
                     <p>Your attendance is: {result.attendance}%</p>
                     <p>You need to attend {result.classesNeeded} more classes ({result.daysNeeded} days) to reach 75% attendance.</p>
                     <p>{result.daysToSkip > 0 ? `You can afford to skip ${result.daysToSkip} more days` : "You cannot afford to skip any days"} while maintaining your attendance above 75%.</p>
