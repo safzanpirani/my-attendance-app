@@ -3,8 +3,8 @@
 import { useState } from 'react';
 
 export default function Home() {
-    const [attendedClasses, setAttendedClasses] = useState(0);
-    const [totalClasses, setTotalClasses] = useState(0);
+    const [attendedClasses, setAttendedClasses] = useState(null);
+    const [totalClasses, setTotalClasses] = useState(null);
     const [result, setResult] = useState(null);
 
     function classesNeededForTargetAttendance(attendedClasses, totalClasses, targetPercentage = 75, classesPerDay = 6) {
